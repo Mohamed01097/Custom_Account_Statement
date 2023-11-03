@@ -1,0 +1,62 @@
+/* Define a class for the table with border style */
+h1{
+    text-align:center;
+    font-size:25px;
+    font-weight:600;
+}
+
+h2{
+    font-size:20px;
+}
+
+h3{
+    font-size:20px;
+}
+
+.table-bordered {
+    border: 2px solid black;
+}
+
+/* Define a class for table headers with border style */
+.table-bordered th {
+    border: 2px solid black;
+    font-size:22px;
+    font-weight:600;
+}
+.expand-cell {
+    width: 120px; /* Adjust the height value as needed */
+}
+
+/* Define a class for table cells with border style */
+.table-bordered td {
+    border: 2px solid black;
+    font-size:18px;
+    font-weight:300;
+}
+
+/* Center the text within table headers and cells */
+.text-center {
+    text-align: center;
+}
+
+.title{
+    text-align:center;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Use your desired shade color */
+}
+.hidden-row {
+  display: none;
+}
+tr {
+  text-align:center;
+  font-size:20px;
+  font-weight:600px;
+ }
+td{
+  font-size:20px;
+  text-align:center;
+  font-weight:600px;
+}
