@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_common_report_view" model="ir.ui.view">
+        <field name="name">Common Report</field>
+        <field name="model">account.common.report</field>
+        <field name="arch" type="xml">
+            <form string="كشف الارصدة">
+                <sheet>
+                    <group>
+                        <group col="3">
+                            <field name="target_move" widget="radio" invisible="1"/>
+                            <field name="date_from" style="background-color:#f2f2f2;"/>
+                            <field name="date_to" style="background-color:#f2f2f2;"/>
+                        </group>
+                        <group col="3">
+                            <field name="with_old_balance"/>
+                            <field name="with_total"/>
+                            <field name="with_zero_balance"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="journal_ids" widget="many2many_tags" options="{'no_create': True}" invisible="1"/>
+                        <field name="company_id" invisible="1"/>
+                    </group>
+                    <footer>
+                        <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"
+                                data-hotkey="q"/>
+                        <button string="Cancel" class="btn btn-secondary" special="cancel" data-hotkey="z"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
